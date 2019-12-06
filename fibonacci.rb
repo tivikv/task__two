@@ -1,13 +1,11 @@
-array = [0, 1]
-a = 0
-b = 1
-c = 0
+  array = [0, 1]
+  a = 0
+  b = 1
 
-while (a + b) <= 100
-  c = a + b
-  array.push c
-  a = b
-  b = c
-end
 
-puts array
+  while (a + b) <= 100
+    array.push(a+b)
+    a, b = b, a + b
+  end
+
+  puts array
